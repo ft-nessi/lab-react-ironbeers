@@ -1,14 +1,19 @@
-import {Link} from "react-router-dom"
-
+import { Link } from "react-router-dom";
 
 function Home() {
-    return (
-        <div>
-            <Link to={"/beers"}>All Beers</Link>/>
-            <Link to={"/random-beers"}>All Beers</Link>/>
-            <Link to={"/new-beers"}>All Beers</Link>/>
-        </div>
-    )
-
+  return (
+    <div>
+      <h1>Hallo</h1>
+      <div>
+        <Link to={"/beers"}>All Beers</Link>
+      </div>
+      <div>
+        <Link to={"/random-beer"}>Random Beer</Link>
+      </div>
+      <div>
+        <Link to={"/new-beer"}>New Beer</Link>
+      </div>
+    </div>
+  );
 }
-export default Home
+export default Home;
