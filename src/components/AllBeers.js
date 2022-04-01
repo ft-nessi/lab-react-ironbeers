@@ -1,6 +1,7 @@
+import Header from "./Header";
 
-function AllBeers () {
-
+function AllBeers() {
+  return <Header />;
 }
 
-export default AllBeers
+export default AllBeers;

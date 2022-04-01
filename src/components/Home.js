@@ -1,9 +1,9 @@
+
 import { Link } from "react-router-dom";
 
 function Home() {
   return (
     <div>
-      <h1>Hallo</h1>
       <div>
         <Link to={"/beers"}>All Beers</Link>
       </div>
