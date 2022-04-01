@@ -7,8 +7,7 @@ const url = "https://ih-beers-api2.herokuapp.com/beers";
 
 function SingleBeer() {
   const params = useParams();
-  const [singleBeer, setSingleBeer] = useState([]);
-  console.log(params.id);
+  const [singleBeer, setSingleBeer] = useState();
 
   useEffect(() => {
     async function fetchDataWithAPI() {
@@ -22,8 +21,6 @@ function SingleBeer() {
     }
     fetchDataWithAPI();
   }, [params]);
-
-  console.log(singleBeer);
 
   return (
     <>
